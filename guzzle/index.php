@@ -12,7 +12,7 @@ $client = new Client();
 try {
 	// Request function.
   $requests = function ($total, $params) use ($client) {
-    $uri = 'http://localhost/guzzle/actions/create_file.php';
+    $uri = 'http://php-technologies/guzzle/actions/create_file.php';
 
     for ($i = 0; $i < $total; $i++) {
       $sleep = rand(0, 20);

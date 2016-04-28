@@ -21,7 +21,7 @@ function inM($memory, $addition_string = '') {
   echo $addition_string . ' ' . number_format($test) . ' KB' . PHP_EOL;
 }
 
-define(SIZE_OF_ARRAY, 10000);
+define(SIZE_OF_ARRAY, 100000);
 
 // Typical foreach
 echo 'count($array)= ' . SIZE_OF_ARRAY . '; Foreach($array as $key => $val)' . PHP_EOL;
