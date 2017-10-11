@@ -11,11 +11,13 @@ echo 'Read';
 echo PHP_EOL;
 echo '-----------------------------------------------------------------';
 echo PHP_EOL;
+
 foreach ($array as $val) {
   $test = $val*2;
   echo memory_get_usage() - $memory_limit;
   echo PHP_EOL;
 }
+
 unset($test);
 echo '-----------------------------------------------------------------';
 echo PHP_EOL;
@@ -45,6 +47,10 @@ foreach ($array as $key => &$val) {
   echo PHP_EOL;
 }
 
+echo '-----------------------------------------------------------------';
+echo PHP_EOL;
+echo 'SPL fixed array';
+echo PHP_EOL;
 $spl = new SplFixedArray();
 $spl = $spl::fromArray($array);
 unset($array);
